@@ -1,0 +1,9 @@
+bird::router_id: 172.16.0.2
+bird::ipv6_enable: false
+bird::protocols_bgp:
+  ix:
+    local_as: 64498
+    neighbours:
+      64497:
+        ipv4_addresses:
+        - 172.16.0.1

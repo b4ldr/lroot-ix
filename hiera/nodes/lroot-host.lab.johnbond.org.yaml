@@ -1,0 +1,18 @@
+bird::router_id: 192.168.0.111
+bird::ipv6_enable: false
+bird::protocols_bgp:
+  lroot:
+    export_filter: 'all'
+    local_as: 64496
+    neighbours:
+      20144:
+        ipv4_addresses:
+        - 192.168.0.110
+  ix:
+    local_as: 64496
+    rs_client: true
+    export_filter: 'all'
+    neighbours:
+      64497:
+        ipv4_addresses:
+        - 172.16.0.1
